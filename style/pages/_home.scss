@@ -1,0 +1,72 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/media' as *;
+
+
+.brand-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .shoe-type {
+    margin-bottom: 2rem;
+
+    h3 {
+      text-align: center;
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      color: #555;
+    }
+
+    .shoe-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      justify-content: center;
+
+      @include mobile {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+
+a.shoe-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+  }
+}

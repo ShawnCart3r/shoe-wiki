@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style/main.css" />
+  <title>Navbar Test</title>
+</head>
+<body>
+ <nav class="navbar">
+  <!-- Logo -->
+  <a href="https://www.fleetfeet.com" target="_blank" class="navbar__logo">
+    <img src="https://www.fleetfeet.com/themes/custom/fleetfeet/logo.svg" alt="Fleet Feet Logo" />
+  </a>
+
+  <!-- Hamburger Button -->
+  <button id="hamburgerToggle" class="navbar__hamburger" aria-label="Toggle menu">☰</button>
+
+  <!-- Nav Links -->
+  <ul id="navbarLinks" class="navbar__links">
+    <!-- Dropdown -->
+    <li class="navbar__item navbar__item--dropdown">
+      <button id="dropdownToggle" class="navbar__toggle" aria-haspopup="true" aria-expanded="false">
+        All Brands ▼
+      </button>
+      <ul id="dropdownMenu" class="navbar__dropdown">
+        <li><a href="#brooks">Brooks</a></li>
+        <li><a href="#asics">Asics</a></li>
+        <li><a href="#saucony">Saucony</a></li>
+        <li><a href="#hoka">Hoka</a></li>
+         <li><a href="#brooks">New Balance</a></li>
+        <li><a href="#asics">Mizuno</a></li>
+        <li><a href="#saucony">Karhue</a></li>
+        <li><a href="#hoka">Altra</a></li>
+      </ul>
+    </li>
+
+    <!-- Other Links -->
+    <li class="navbar__item">
+      <a href="https://www.fleetfeet.com" target="_blank">FleetFeet.com</a>
+    </li>
+    <li class="navbar__item">
+      <a href="https://www.fleetfeet.com/s/fleet-feet-university" target="_blank">Fleet Feet University</a>
+    </li>
+  </ul>
+</nav>
+<main class="shoe-catalog">
+
+ <section id="hoka" class="brand-section">
+  <h2>Hoka</h2>
+  <div class="shoe-type">
+    <h3>Neutral</h3>
+    <div class="shoe-grid">
+      <a href="https://www.fleetfeet.com/products/mens-hoka-clifton-9" target="_blank" class="shoe-card">
+        <img src="path/to/hoka-clifton-9.jpg" alt="Hoka Clifton 9" />
+
+      </a>
+    
+    </div>
+  </div>
+  <div class="shoe-type">
+    <h3>Stability</h3>
+    <div class="shoe-grid">
+      <a href="https://www.fleetfeet.com/products/mens-hoka-arahi-6" target="_blank" class="shoe-card">
+        <img src="path/to/hoka-arahi-6.jpg" alt="Hoka Arahi 6" />
+      
+      </a>
+      
+    </div>
+  </div>
+</section>
+
+<section id="new-balance" class="brand-section">
+  <h2>New Balance</h2>
+  <div class="shoe-type">
+    <h3>Neutral</h3>
+    <div class="shoe-grid">
+      <a href="https://www.fleetfeet.com/products/mens-new-balance-fresh-foam-x-1080v13" target="_blank" class="shoe-card">
+        <img src="path/to/fresh-foam-1080.jpg" alt="Fresh Foam 1080" />
+       
+      </a>
+      
+    </div>
+  </div>
+  <div class="shoe-type">
+    <h3>Stability</h3>
+    <div class="shoe-grid">
+      <a href="https://www.fleetfeet.com/products/mens-new-balance-fresh-foam-x-vongo-v5" target="_blank" class="shoe-card">
+        <img src="path/to/fresh-foam-x-vongo.jpg" alt="Fresh Foam X Vongo" />
+        
+      </a>
+      
+    </div>
+  </div>
+</section>
+
+<section id="mizuno" class="brand-section">
+  <h2>Mizuno</h2>
+  <div class="shoe-type">
+    <h3>Neutral</h3>
+    <div class="shoe-grid">
+      <a href="https://www.fleetfeet.com/products/mens-mizuno-wave-rider-27" target="_blank" class="shoe-card">
+        <img src="path/to/wave-rider-27.jpg" alt="Wave Rider 27" />
+     
+      </a>
+     
+    </div>
+  </div>
+  <div class="shoe-type">
+    <h3>Stability</h3>
+    <div class="shoe-grid">
+      <a href="https://www.fleetfeet.com/products/mens-mizuno-wave-inspire-20" target="_blank" class="shoe-card">
+        <img src="path/to/wave-inspire-20.jpg" alt="Wave Inspire 20" />
+       
+      </a>
+    
+    </div>
+  </div>
+</section>
+
+<section id="asics" class="brand-section">
+  <h2>Asics</h2>
+  <div class="shoe-type">
+    <h3>Neutral</h3>
+    <div class="shoe-grid">
+      <a href="https://www.fleetfeet.com/products/mens-asics-gel-nimbus-26" target="_blank" class="shoe-card">
+        <img src="path/to/gel-nimbus-26.jpg" alt="Gel-Nimbus 26" />
+       
+      </a>
+     
+    </div>
+  </div>
+  <div class="shoe-type">
+    <h3>Stability</h3>
+    <div class="shoe-grid">
+      <a href="https://www.fleetfeet.com/products/mens-asics-gel-kayano-31" target="_blank" class="shoe-card">
+        <img src="path/to/gel-kayano-31.jpg" alt="Gel-Kayano 31" />
+       
+      </a>
+      
+    </div>
+  </div>
+</section>
+
+<section id="brooks" class="brand-section">
+  <h2>Brooks</h2>
+  <div class="shoe-type">
+    <h3>Neutral</h3>
+    <div class="shoe-grid">
+      <a href="https://www.fleetfeet.com/products/mens-brooks-ghost-16" target="_blank" class="shoe-card">
+        <img src="path/to/ghost-16.jpg" alt="Ghost 16" />
+        
+      </a>
+      
+    </div>
+  </div>
+  <div class="shoe-type">
+    <h3>Stability</h3>
+    <div class="shoe-grid">
+      <a href="https://www.fleetfeet.com/products/mens-brooks-adrenaline-gts-23" target="_blank" class="shoe-card">
+        <img src="path/to/adrenaline-gts-23.jpg" alt="Adrenaline GTS 23" />
+     
+      </a>
+      
+    </div>
+  </div>
+</section>
+
+<section id="altra" class="brand-section">
+  <h2>Altra</h2>
+  <div class="shoe-type">
+    <h3>Neutral</h3>
+    <div class="shoe-grid">
+      <a href="https://www.fleetfeet.com/products/mens-altra-torin-7" target="_blank" class="shoe-card">
+        <img src="path/to/torin-7.jpg" alt="Torin 7" />
+        
+      </a>
+      
+    </div>
+  </div>
+  <div class="shoe-type">
+    <h3>Stability</h3>
+    <div class="shoe-grid">
+      <a href="https://www.fleetfeet.com/products/mens-altra-provision-8" target="_blank" class="shoe-card">
+        <img src="path/to/provision-8.jpg" alt="Provision 8" />
+        
+      </a>
+      
+    </div>
+  </div>
+</section>
+
+<section id="saucony" class="brand-section">
+  <h2>Saucony</h2>
+  <div class="shoe-type">
+    <h3>Neutral</h3>
+    <div class="shoe-grid">
+      <a href="https://www.fleetfeet.com/products/mens-saucony-ride-17" target="_blank" class="shoe-card">
+        <img src="path/to/ride-17.jpg" alt="Ride 17" />
+        
+      </a>
+     
+    </div>
+  </div>
+  <div class="shoe-type">
+    <h3>Stability</h3>
+    <div class="shoe-grid">
+      <a href="https://www.fleetfeet.com/products/mens-saucony-guide-17" target="_blank" class="shoe-card">
+        <img src="path/to/guide-17.jpg" alt="Guide 17" />
+        
+      </a>
+      
+    </div>
+  </div>
+</section>
+<section id="saucony" class="brand-section">
+  <h2>Karhue</h2>
+  <div class="shoe-type">
+    <h3>Neutral</h3>
+    <div class="shoe-grid">
+      <a href="https://www.fleetfeet.com/products/mens-saucony-ride-17" target="_blank" class="shoe-card">
+        <img src="path/to/ride-17.jpg" alt="Ride 17" />
+        
+      </a>
+     
+    </div>
+  </div>
+  <div class="shoe-type">
+    <h3>Stability</h3>
+    <div class="shoe-grid">
+      <a href="https://www.fleetfeet.com/products/mens-saucony-guide-17" target="_blank" class="shoe-card">
+        <img src="path/to/guide-17.jpg" alt="Guide 17" />
+    
+      </a>
+      
+    </div>
+  </div>
+</section>
+
+
+
+</main>
+
+
+
+  <script src="main.js"></script>
+</body>
+</html>

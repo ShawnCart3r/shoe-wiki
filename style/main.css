@@ -1,0 +1,228 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.navbar__logo img {
+  height: 40px;
+}
+.navbar__hamburger {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .navbar__hamburger {
+    display: block;
+  }
+}
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 1024px) {
+  .navbar__links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 2rem;
+    background-color: white;
+    width: 280px;
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid #ddd;
+    z-index: 999;
+  }
+  .navbar__links li {
+    width: 100%;
+    margin-bottom: 0.75rem;
+  }
+  .navbar__links li a,
+  .navbar__links li button {
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+  .navbar__links li a:hover,
+  .navbar__links li button:hover {
+    color: #0070f3;
+  }
+}
+@media (max-width: 1024px) {
+  .navbar__links.open {
+    display: flex;
+  }
+}
+.navbar__item {
+  position: relative;
+}
+.navbar__item a,
+.navbar__item button {
+  color: #333;
+  font-weight: 600;
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+.navbar__item a:hover,
+.navbar__item button:hover {
+  color: #0070f3;
+}
+@media (max-width: 1024px) {
+  .navbar__item {
+    width: 100%;
+  }
+  .navbar__item a,
+  .navbar__item button {
+    font-size: 1rem;
+    padding: 0.75rem 0;
+  }
+}
+@media (min-width: 1025px) {
+  .navbar__item--dropdown:hover .navbar__dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+.navbar__dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-width: 150px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.2s ease;
+  z-index: 100;
+}
+.navbar__dropdown li a {
+  display: block;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+.navbar__dropdown li a:hover {
+  background-color: #f2f2f2;
+}
+.navbar__dropdown.dropdown--open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+@media (max-width: 1024px) {
+  .navbar__dropdown {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    border: none;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    display: none;
+  }
+  .navbar__dropdown li a {
+    padding: 0.25rem 0;
+  }
+  .navbar__dropdown.dropdown--open {
+    display: block;
+  }
+}
+
+.brand-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.brand-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+.brand-section .shoe-type {
+  margin-bottom: 2rem;
+}
+.brand-section .shoe-type h3 {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #555;
+}
+.brand-section .shoe-type .shoe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .brand-section .shoe-type .shoe-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+a.shoe-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+a.shoe-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+a.shoe-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+a.shoe-card p {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+}
